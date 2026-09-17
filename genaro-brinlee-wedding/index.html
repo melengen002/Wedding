@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The wedding of Genaro & Brinlee — June 12, 2027." />
+  <title>Genaro & Brinlee | 06.12.27</title>
+
+  <!-- Elegant, human-feeling type pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Decorative grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="mini-monogram" href="#home" aria-label="Back to top">G <span>·</span> B</a>
+
+    <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#story" data-i18n="navStory">Our Story</a>
+      <a href="#weekend" data-i18n="navWeekend">The Weekend</a>
+      <a href="#travel" data-i18n="navTravel">Travel</a>
+      <a href="#registry" data-i18n="navRegistry">Registry</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-rsvp" href="#rsvp">RSVP</a>
+    </nav>
+
+    <div class="language-switch" aria-label="Language">
+      <button class="lang active" data-lang="en">EN</button>
+      <span>/</span>
+      <button class="lang" data-lang="es">ES</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- INVITATION -->
+    <section class="hero" id="home">
+      <div class="invitation reveal">
+        <div class="monogram">G <span>·</span> B</div>
+        <p class="eyebrow" data-i18n="together">TOGETHER WITH THEIR FAMILIES</p>
+
+        <h1>
+          <span>Genaro</span>
+          <em>&amp;</em>
+          <span>Brinlee</span>
+        </h1>
+
+        <p class="invitation-copy" data-i18n="invite">
+          joyfully invite you to celebrate their marriage
+        </p>
+
+        <div class="ornament"><span></span><b>✦</b><span></span></div>
+
+        <p class="date">JUNE 12, 2027</p>
+        <p class="place">ALPINE, UTAH</p>
+
+        <a class="button primary" href="#rsvp" data-i18n="rsvpButton">Kindly RSVP</a>
+        <a class="text-link" href="#weekend" data-i18n="viewWeekend">View the weekend ↓</a>
+      </div>
+
+      <div class="hero-photo-wrap reveal">
+        <div class="photo-placeholder hero-photo">
+          <img src="images/hero.jpg" alt="Genaro and Brinlee" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-message">
+            <span>YOUR PHOTO HERE</span>
+            <small>images/hero.jpg</small>
+          </div>
+        </div>
+        <p class="photo-caption" data-i18n="chapter">our favorite chapter yet</p>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+      <p class="script" data-i18n="countdownIntro">Until we say “I do”</p>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">000</strong><span data-i18n="days">days</span></div>
+        <div><strong id="hours">00</strong><span data-i18n="hours">hours</span></div>
+        <div><strong id="minutes">00</strong><span data-i18n="minutes">minutes</span></div>
+        <div><strong id="seconds">00</strong><span data-i18n="seconds">seconds</span></div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section story" id="story">
+      <div class="section-number">01</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="howWeGotHere">HOW WE GOT HERE</p>
+        <h2 data-i18n="storyTitle">A pretty good<br><em>love story.</em></h2>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-copy reveal">
+          <p data-i18n="story1">
+            It started with a conversation that lasted longer than either of us expected.
+            Genaro thought he was being charming. Brinlee is still deciding.
+          </p>
+          <p data-i18n="story2">
+            Somewhere between spontaneous drives, late-night food runs, meeting each other's
+            families, and taking an unreasonable number of photos, we realized ordinary days
+            were a lot better together.
+          </p>
+          <p data-i18n="story3">
+            A few years, plenty of inside jokes, and one very important question later,
+            we're getting married. We can't wait to celebrate with the people who helped
+            make our story what it is.
+          </p>
+          <p class="signature">G &amp; B</p>
+        </div>
+
+        <div class="stacked-photos reveal">
+          <div class="photo-placeholder story-photo photo-one">
+            <img src="images/couple-1.jpg" alt="Couple photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-message"><span>PHOTO 01</span><small>couple-1.jpg</small></div>
+          </div>
+          <div class="photo-placeholder story-photo photo-two">
+            <img src="images/couple-2.jpg" alt="Couple photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-message"><span>PHOTO 02</span><small>couple-2.jpg</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEKEND -->
+    <section class="section weekend" id="weekend">
+      <div class="section-number light">02</div>
+      <div class="section-heading centered reveal">
+        <p class="eyebrow light-text" data-i18n="saveWeekend">SAVE THE WHOLE WEEKEND</p>
+        <h2 class="light-text" data-i18n="weekendTitle">The Wedding <em>Weekend</em></h2>
+        <p class="intro light-text" data-i18n="weekendIntro">
+          Come for the wedding. Stay for the dancing, dessert, and stories we'll probably hear about for years.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="event reveal">
+          <div class="event-date"><span>FRI</span><strong>11</strong><small>JUNE</small></div>
+          <div class="event-info">
+            <p class="event-time">6:30 PM</p>
+            <h3 data-i18n="dinner">Welcome Dinner</h3>
+            <p class="venue">The Orchard House · Alpine, Utah</p>
+            <p data-i18n="dinnerDesc">A relaxed evening with family, good food, and no speeches longer than the meal.</p>
+            <p class="dress" data-i18n="dressSmart">Dress: Smart casual</p>
+          </div>
+        </article>
+
+        <article class="event reveal">
+          <div class="event-date"><span>SAT</span><strong>12</strong><small>JUNE</small></div>
+          <div class="event-info">
+            <p class="event-time">11:00 AM</p>
+            <h3 data-i18n="sealing">Temple Sealing</h3>
+            <p class="venue">Mount Timpanogos Utah Temple</p>
+            <p data-i18n="sealingDesc">The sealing ceremony is for invited endowed guests. Friends and family are welcome to join us outside afterward for photos and hugs.</p>
+            <p class="dress" data-i18n="dressSunday">Dress: Sunday best</p>
+          </div>
+        </article>
+
+        <article class="event reveal">
+          <div class="event-date ghost"><span>SAT</span><strong>12</strong><small>JUNE</small></div>
+          <div class="event-info">
+            <p class="event-time">6:00 PM</p>
+            <h3 data-i18n="reception">Dinner &amp; Reception</h3>
+            <p class="venue">The Orchard House · Alpine, Utah</p>
+            <p data-i18n="receptionDesc">Dinner, dancing, cake, and a dance floor Genaro fully intends to take too seriously.</p>
+            <p class="dress" data-i18n="dressFormal">Dress: Formal · earth tones encouraged</p>
+          </div>
+        </article>
+
+        <article class="event reveal">
+          <div class="event-date ghost"><span>SAT</span><strong>12</strong><small>JUNE</small></div>
+          <div class="event-info">
+            <p class="event-time">10:00 PM</p>
+            <h3 data-i18n="afterparty">After Party</h3>
+            <p class="venue">Same place. Different playlist.</p>
+            <p data-i18n="afterDesc">Late-night snacks, music, and one last excuse not to go home yet.</p>
+          </div>
+        </article>
+
+        <article class="event reveal">
+          <div class="event-date"><span>SUN</span><strong>13</strong><small>JUNE</small></div>
+          <div class="event-info">
+            <p class="event-time">10:30 AM</p>
+            <h3 data-i18n="brunch">Farewell Brunch</h3>
+            <p class="venue">Alpine Grove · Alpine, Utah</p>
+            <p data-i18n="brunchDesc">Coffee, pastries, breakfast, and one final goodbye before everyone heads home.</p>
+            <p class="dress" data-i18n="dressCasual">Dress: Casual</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow" data-i18n="galleryEyebrow">A FEW OF OUR FAVORITES</p>
+        <h2 data-i18n="galleryTitle">Us, <em>lately.</em></h2>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="photo-placeholder gallery-a"><img src="images/couple-3.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder-message"><span>PHOTO 03</span><small>couple-3.jpg</small></div></div>
+        <div class="photo-placeholder gallery-b"><img src="images/couple-4.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder-message"><span>PHOTO 04</span><small>couple-4.jpg</small></div></div>
+        <div class="gallery-quote"><p data-i18n="galleryQuote">“Turns out forever sounds pretty good.”</p><span>— G + B</span></div>
+        <div class="photo-placeholder gallery-c"><img src="images/couple-5.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder-message"><span>PHOTO 05</span><small>couple-5.jpg</small></div></div>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section class="section travel" id="travel">
+      <div class="section-number">03</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="gettingThere">GETTING THERE</p>
+        <h2 data-i18n="travelTitle">Meet us in <em>Utah.</em></h2>
+      </div>
+
+      <div class="travel-grid">
+        <article class="info-card reveal">
+          <span class="card-number">01</span>
+          <h3 data-i18n="venueTitle">The Venue</h3>
+          <p class="big">The Orchard House</p>
+          <p>1280 Grove Lane<br>Alpine, UT 84004</p>
+          <p data-i18n="venueNote">Mountain views, summer air, and hopefully absolutely no June snow.</p>
+          <a href="https://maps.google.com/?q=Alpine+Utah" target="_blank" rel="noopener" class="text-link" data-i18n="directions">Get directions ↗</a>
+        </article>
+
+        <article class="info-card reveal">
+          <span class="card-number">02</span>
+          <h3 data-i18n="stayTitle">Where to Stay</h3>
+          <p class="big">Canyon House Hotel</p>
+          <p data-i18n="stayNote">We've reserved a fictional room block 15 minutes from the venue. Use code <strong>GB2027</strong> for the imaginary discount.</p>
+          <a href="#" onclick="event.preventDefault(); alert('Replace this with your real hotel booking link.');" class="text-link" data-i18n="hotelLink">Hotel details ↗</a>
+        </article>
+
+        <article class="info-card reveal">
+          <span class="card-number">03</span>
+          <h3 data-i18n="airportTitle">Flying In</h3>
+          <p class="big">Salt Lake City</p>
+          <p data-i18n="airportNote">Salt Lake City International Airport is about 40 minutes away. A rental car is the easiest way to explore the area.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- REGISTRY -->
+    <section class="section registry" id="registry">
+      <div class="registry-inner reveal">
+        <p class="eyebrow" data-i18n="gifts">GIFTS, IF YOU INSIST</p>
+        <h2 data-i18n="registryTitle">Your presence is<br><em>the best gift.</em></h2>
+        <p class="intro" data-i18n="registryIntro">
+          Seriously. But for those who have asked, we've put together a few things for our next chapter.
+        </p>
+
+        <div class="registry-links">
+          <a href="#" onclick="fakeRegistry(event, 'Home Registry')"><span>01</span><b data-i18n="homeRegistry">Home Registry</b><i>↗</i></a>
+          <a href="#" onclick="fakeRegistry(event, 'Honeymoon Fund')"><span>02</span><b data-i18n="honeymoon">Honeymoon Fund</b><i>↗</i></a>
+          <a href="#" onclick="fakeRegistry(event, 'Date Night Fund')"><span>03</span><b data-i18n="dateNight">Date Night Fund</b><i>↗</i></a>
+        </div>
+        <small class="demo-note" data-i18n="registryDemo">Demo links — swap these for your real registries later.</small>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="section-number">04</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">GOOD TO KNOW</p>
+        <h2 data-i18n="faqTitle">Questions? <em>We got you.</em></h2>
+      </div>
+
+      <div class="accordion reveal">
+        <details>
+          <summary data-i18n="faq1q">What should I wear?<span>+</span></summary>
+          <p data-i18n="faq1a">Formal attire for the reception. Think suits, dresses, and warm earth tones. Please save white for the bride.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq2q">Can I bring a plus one?<span>+</span></summary>
+          <p data-i18n="faq2a">If a plus one is included with your invitation, absolutely. Our RSVP will make it clear.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq3q">Are children invited?<span>+</span></summary>
+          <p data-i18n="faq3a">We love your little ones. Due to space, please bring only the guests named on your invitation.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq4q">What is an LDS temple sealing?<span>+</span></summary>
+          <p data-i18n="faq4a">In The Church of Jesus Christ of Latter-day Saints, a temple sealing is a sacred marriage ordinance centered on an eternal family covenant. Temple attendance is limited to invited members with current temple recommends, but we would love everyone to join us for the reception.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq5q">When should I RSVP?<span>+</span></summary>
+          <p data-i18n="faq5a">Please RSVP by May 1, 2027. Earlier is even better, because apparently weddings involve spreadsheets.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp" id="rsvp">
+      <div class="rsvp-card reveal">
+        <p class="eyebrow" data-i18n="rsvpEyebrow">THE FAVOR OF A REPLY IS REQUESTED</p>
+        <h2>RSVP</h2>
+        <p class="intro" data-i18n="rsvpIntro">We really hope you'll be there. Please reply by May 1, 2027.</p>
+
+        <form id="rsvpForm">
+          <div class="form-row two">
+            <label>
+              <span data-i18n="firstName">First name</span>
+              <input type="text" name="firstName" required />
+            </label>
+            <label>
+              <span data-i18n="lastName">Last name</span>
+              <input type="text" name="lastName" required />
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="email">Email</span>
+            <input type="email" name="email" required />
+          </label>
+
+          <fieldset>
+            <legend data-i18n="attending">Will you be joining us?</legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="attendance" value="yes" required><span data-i18n="joyfully">Joyfully accepts</span></label>
+              <label class="choice"><input type="radio" name="attendance" value="no"><span data-i18n="regretfully">Regretfully declines</span></label>
+            </div>
+          </fieldset>
+
+          <div id="attendingFields">
+            <div class="form-row two">
+              <label>
+                <span data-i18n="partySize">Number attending</span>
+                <select name="partySize">
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+                </select>
+              </label>
+              <label>
+                <span data-i18n="plusOne">Plus-one name</span>
+                <input type="text" name="plusOne" placeholder="Optional" />
+              </label>
+            </div>
+
+            <label>
+              <span data-i18n="events">Which events will you attend?</span>
+              <div class="check-grid">
+                <label><input type="checkbox" name="events" value="welcome"> <span data-i18n="welcomeShort">Welcome Dinner</span></label>
+                <label><input type="checkbox" name="events" value="temple"> <span data-i18n="templeShort">Temple / Photos</span></label>
+                <label><input type="checkbox" name="events" value="reception"> <span data-i18n="receptionShort">Reception</span></label>
+                <label><input type="checkbox" name="events" value="after"> <span data-i18n="afterShort">After Party</span></label>
+                <label><input type="checkbox" name="events" value="brunch"> <span data-i18n="brunchShort">Sunday Brunch</span></label>
+              </div>
+            </label>
+
+            <label>
+              <span data-i18n="meal">Meal preference</span>
+              <select name="meal">
+                <option value="" data-i18n="chooseMeal">Choose one</option>
+                <option data-i18n="chicken">Herb-roasted chicken</option>
+                <option data-i18n="beef">Braised beef</option>
+                <option data-i18n="veg">Garden vegetable entrée</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="dietary">Dietary restrictions</span>
+              <input type="text" name="dietary" data-i18n-placeholder="dietaryPlaceholder" placeholder="Allergies, vegetarian, etc." />
+            </label>
+
+            <label>
+              <span data-i18n="song">What song will get you on the dance floor?</span>
+              <input type="text" name="song" data-i18n-placeholder="songPlaceholder" placeholder="We are judging these answers." />
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="message">Leave us a note</span>
+            <textarea name="message" rows="4" data-i18n-placeholder="messagePlaceholder" placeholder="Advice, a memory, or something that makes us laugh."></textarea>
+          </label>
+
+          <button type="submit" class="button primary submit-button" data-i18n="sendRsvp">Send RSVP</button>
+          <p class="form-note" data-i18n="formNote">Demo mode: this currently saves responses only in this browser. Connect a form service before publishing.</p>
+        </form>
+
+        <div class="success-message" id="successMessage">
+          <div class="success-mark">G · B</div>
+          <h3 data-i18n="thankYou">Thank you!</h3>
+          <p data-i18n="responseSaved">Your demo RSVP has been saved in this browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="closing">
+      <p class="script" data-i18n="cantWait">We can't wait to celebrate with you.</p>
+      <h2>Genaro <em>&amp;</em> Brinlee</h2>
+      <p>06 · 12 · 27</p>
+      <a href="#home" class="back-top" data-i18n="backTop">Back to the top ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>G · B</span>
+    <span data-i18n="madeLove">Made with love (and a suspicious amount of planning).</span>
+    <span>2027</span>
+  </footer>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Music">
+    <span class="music-icon">♫</span>
+    <span class="music-label" data-i18n="music">Music</span>
+  </button>
+
+  <!-- Add your own licensed audio file as music/wedding-song.mp3 -->
+  <audio id="weddingMusic" loop>
+    <source src="music/wedding-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
